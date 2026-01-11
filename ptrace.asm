@@ -42,7 +42,7 @@ _start:
     syscall 
 
 
-    ; PTRACE_POKEDATA
+    ; PTRACE_POKEDATA (escribir en memoria)
     mov rax, 101
     mov rdi, 5     ; PTRACE_POKEDATA
     mov rsi, r15   ; PID
